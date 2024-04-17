@@ -1,0 +1,108 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+</div>
+<div class="logo-contact-container">
+    <div class="logo-contact">
+        <img src="{% static 'assets/vecteezy_cute-doctor-.png' %}" alt="Hope Logo">
+        <div class="contact-container">
+            <div class="contact-paragraph">
+                <h1> Get in Touch With Us</h1>
+                <div class="about-paragraph-text">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="whole-container">
+    <div class="form-container">
+        <div class="container">
+            <form method='POST' action="">
+                {% csrf_token %}    
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" required name="firstname" placeholder="Your name..">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Example:youremail@gmail.com">
+
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="Nepal">Nepal</option>
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="USA">USA</option>
+                    <option value="India">India</option>
+                </select>
+
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:120px"></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+        <div class="contact-us-container">
+            <div class="contact-us">
+                <div class="call">
+                    <img src="{% static 'assets/call_icon_5.png' %}" alt="">
+                    <div class="call-text">
+                        <h3>+9779862919787</h3>
+                    </div>
+                </div>
+                <div class="email">
+                    <img src="{% static 'assets/email1.png' %}" alt="">
+                    <div class="email-text">
+                        <h3>mr.shridharkhanal7@gmail.com</h3>
+                    </div>
+
+                </div>
+                <div class="whatsapp">
+                    <img src="{% static 'assets/whatsapp_icon.png' %}" alt="">
+                    <div class="whatsapp-text">
+                        <h3>+9779862919787</h3>
+                    </div>
+
+                </div>
+                <div class="location">
+                    <img src="{% static 'assets/location3.png' %}" alt="">
+                    <div class="location-text">
+                        <h3>Kathmandu, Nepal</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="map-container">
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.7805690305468!2d85.27856847425349!3d27.69317612611856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb187a97f390b1%3A0xec3f47092df0d4ca!2sKalanki%2C%20Kathmandu%2044600!5e0!3m2!1sen!2snp!4v1709723747452!5m2!1sen!2snp"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+</div>
+
+
+<footer>
+    <div class="about-footer-container-2">
+        <div class="about-footer-box-2">
+            <h1 class="explore">Explore More about us </h1>
+        </div>
+    </div>
+    <nav>
+        <ul class="nav-links-2">
+            <li><a href="{% url 'home'%}"> Home </a></li>
+            <li><a href="{% url 'about'%}"> About Us </a></li>
+            <li><a href="{% url 'contact'%}"> Contact Us </a></li>
+            <li class="nav-signin"><a href="{% url 'signup' %}"> Want to join our team? </a></li>
+            <p> Copyright &#169; 2024 Shree.All Rights Reserved </p>
+        </ul>
+    </nav>
+</footer>
+
+{% endblock %}

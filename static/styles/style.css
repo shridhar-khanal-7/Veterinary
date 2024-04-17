@@ -1,0 +1,913 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: large;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+a:hover {
+  color: white;
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+  text-decoration-color: white;
+}
+
+.required::after {
+  content: " *";
+  color: red;
+}
+/*  SEARCH BAR SECTION  */
+.header__search label {
+  display: inline-block;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  position: relative;
+}
+.logo {
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+.logo img {
+  width: 200px;
+  height: 70px;
+  margin-top: -10px;
+  margin-left: -30px;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+.header__search input {
+  padding: 0.5rem;
+  width: 13rem;
+  border: none;
+  border-radius: 1rem;
+}
+.header__search svg {
+  position: absolute;
+  top: 37px;
+  left: 20px; /* Adjust the left position to position the icon as needed */
+  transform: translateY(-50%);
+  fill: black; /* Adjust the fill color of the icon */
+}
+
+input[name="q"] {
+  padding-left: 40px; /* Adjust the padding to accommodate the icon */
+}
+/*  PAGES SECTION  */
+header {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  background-color: white;
+  padding: 3px;
+}
+
+nav,
+.nav-links {
+  display: flex;
+}
+nav {
+  justify-content: space-around;
+  /* background-color: rgb(74, 152, 249); */
+  background-color: #008cba;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem 0.5rem;
+  margin-top: 1rem;
+  list-style: none;
+  gap: 3rem;
+  color: white;
+}
+/* .nav-links:hover {
+  color: orange;
+} */
+.nav-links-2 {
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem 0.5rem;
+  list-style: none;
+  gap: 5rem;
+  font-size: 3rem;
+}
+
+.nav-links-2 p {
+  list-style: none;
+  font-size: 0.8rem;
+  color: white;
+  padding: 0.5rem 0.5rem;
+  margin-right: 1px;
+  margin-left: 1px;
+}
+a {
+  color: white;
+  text-decoration: none;
+  text-decoration-color: white;
+  font-size: 1.1rem;
+}
+.logo {
+  max-width: 100px;
+  height: 45px;
+  display: flex;
+  margin-top: 1rem;
+  margin-left: -1rem;
+}
+
+/*Banners*/
+
+.banner-video {
+  height: auto;
+  width: 100%;
+  border-radius: 20px;
+}
+.banner-video video {
+  border-radius: 500px;
+}
+.banner {
+  height: auto;
+  width: 100%;
+}
+.banner img {
+  border-radius: 50px;
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-size: 2.5rem;
+  font-family: "Madimi One", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/*  QUOTE SECTION  */
+.message-pic-container {
+  position: relative;
+  height: 800px;
+  width: 89%;
+  border: 5px solid #008cba;
+  border-radius: 10px;
+  align-items: center;
+  padding: 2rem;
+  margin: 1rem;
+  margin-left: 6rem;
+
+  margin-top: 3rem;
+}
+
+.quote-pic-1 img {
+  width: 40%;
+  height: 40%;
+  border-radius: 30px;
+  margin-left: 40px;
+}
+
+.quote-pic-2 img {
+  margin-left: 60%;
+  width: 40%;
+  height: 40%;
+  border-radius: 30px;
+  margin-top: 80px;
+}
+
+.quote-container-1 {
+  position: absolute;
+  top: 30%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+}
+.quote-container-2 {
+  position: absolute;
+  margin-top: 15%;
+  right: 40%;
+  transform: translate(-50%, -50%);
+  left: 22%;
+}
+
+.quote-symbol-1 {
+  font-size: 5rem;
+  color: #3498db;
+}
+
+.quote-symbol-2 {
+  font-size: 5rem;
+  color: #3498db;
+  margin-right: 10%;
+}
+
+.quote-symbol-3 {
+  font-size: 5rem;
+  color: #008cba;
+}
+
+.quote-symbol-4 {
+  font-size: 5rem;
+  color: #008cba;
+  margin-right: 10px;
+  position: relative;
+}
+
+/*  ARTICLE SECTION  */
+
+.article-topic,
+h1 {
+  font-size: 2rem;
+  margin-top: 5rem;
+}
+.headiline {
+  text-align: center;
+  font-size: 1.5rem;
+}
+.description {
+  text-align: center;
+  font-size: 0.7rem;
+}
+.article-container {
+  position: absolute;
+  height: 80%;
+  width: 93%;
+  padding: 1rem;
+  margin: 1rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+}
+.article-container-1 {
+  border: 5px solid #008cba;
+  border-radius: 10px;
+  margin-left: 3rem;
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  height: 540px;
+  width: 540px;
+}
+.article-container-2 {
+  border: 5px solid #008cba;
+  border-radius: 10px;
+  margin-left: 3rem;
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  height: 540px;
+  width: 540px;
+}
+.article-container-3 {
+  border: 5px solid #008cba;
+  border-radius: 10px;
+  margin-left: 3rem;
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  height: 540px;
+  width: 540px;
+}
+button,
+.read-more {
+  background-color: #008cba;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  text-decoration-color: white;
+  font-size: 16px;
+  margin-top: 12px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+.read-more:hover {
+  cursor: pointer;
+  background-color: orange;
+  text-decoration: none;
+  text-decoration-color: white;
+  color: white;
+}
+
+.article-1 img {
+  width: 400px;
+  height: 300px;
+  border-radius: 30px;
+  padding: 1rem;
+}
+.article-2 img {
+  width: 400px;
+  height: 300px;
+  border-radius: 30px;
+  padding: 1rem;
+}
+.article-3 img {
+  width: 400px;
+  height: 300px;
+  border-radius: 30px;
+  padding: 1rem;
+}
+
+/*  FOOTER SECTION  */
+
+.footer-container {
+  display: flex;
+}
+
+.footer-box {
+  display: flex;
+  height: 100px;
+  width: 1325px;
+  background-color: #008cba;
+  align-items: flex-end;
+  color: white;
+  justify-content: center;
+  padding: 1rem;
+  margin-left: 110px;
+  border-radius: 4px;
+  margin-bottom: 0px;
+  margin-top: 50px;
+}
+
+.footer-container-2 {
+  display: flex;
+}
+
+.footer-box-2 {
+  display: flex;
+  margin-bottom: 0;
+  margin-top: 700px;
+  height: 100px;
+  width: 100%;
+  background-color: #008cba;
+  align-items: flex-end;
+  border-radius: 3px;
+  color: white;
+}
+.explore {
+  font-size: 2rem;
+  margin: 0.5rem;
+  margin-left: 600px;
+  margin-top: 1px;
+}
+.footer-info {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-left: 100px;
+}
+
+.footer-container-3 {
+  display: flex;
+}
+
+.footer-box-3 {
+  display: flex;
+  height: 100px;
+  width: 1325px;
+  background-color: #008cba;
+  align-items: flex-end;
+  color: white;
+  justify-content: center;
+  padding: 1rem;
+  margin-left: 110px;
+  border-radius: 4px;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+.social-icons-footer img {
+  gap: 2rem;
+  height: 40px;
+  width: 40px;
+  margin-right: 50px;
+}
+/* अहिंसा परमो धर्मः */
+/* Social links`` */
+
+.social-links-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  bottom: -50px;
+  position: fixed;
+  margin: 1px;
+  border-radius: 3px;
+}
+.social-links {
+  height: 250px;
+  width: 80px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.social-icons img {
+  height: 40px;
+  width: 40px;
+  gap: 5rem;
+}
+.social-icons:hover {
+  cursor: pointer;
+}
+.emergency-icon-footer img {
+  height: 100px;
+  width: 100px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* services */
+
+.services-container {
+  display: flex;
+}
+.services-box {
+  display: flex;
+  height: 100px;
+  width: 1325px;
+  background-color: #008cba;
+  align-items: flex-end;
+  color: white;
+  justify-content: center;
+  padding: 1rem;
+  margin-left: 110px;
+  border-radius: 4px;
+  margin-bottom: 0px;
+  margin-top: 700px;
+}
+
+.our-services-container {
+  position: absolute;
+  height: 60%;
+  width: 90%;
+  padding: 1rem;
+  margin: 5rem;
+  margin-left: 6rem;
+  margin-right: 3rem;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: space-around;
+  border: #008cba solid 5px;
+  border-radius: 20px;
+}
+.our-service {
+  position: absolute;
+  height: 60%;
+  width: 90%;
+  margin: 5rem;
+  margin-top: -60px;
+  margin-right: 175px;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 20px;
+}
+
+.ambulance-service img {
+  height: 250px;
+  width: 250px;
+  gap: 5rem;
+  justify-content: space-around;
+  padding: 30px;
+}
+
+.ambulance-service {
+  height: 250px;
+  width: 250px;
+  gap: 5rem;
+  justify-content: space-around;
+  padding: 30px;
+}
+.seven-services img {
+  height: 250px;
+  width: 250px;
+  gap: 50px;
+  justify-content: space-around;
+  padding: 30px;
+}
+
+.seven-services {
+  height: 250px;
+  width: 250px;
+  gap: 50px;
+  justify-content: space-around;
+  padding: 30px;
+}
+.aid-service img {
+  height: 250px;
+  width: 250px;
+  gap: 10rem;
+  justify-content: space-around;
+  margin-top: -20px;
+  padding: 50px;
+}
+
+.aid-service {
+  height: 250px;
+  width: 250px;
+  gap: 20rem;
+  margin-top: -10px;
+  padding: 50px;
+}
+
+.services-btn-1 {
+  background-color: #008cba;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  margin-top: 22px;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  width: 300px;
+}
+.services-btn-1:hover {
+  cursor: default;
+  background-color: orange;
+}
+
+.services-btn-2 {
+  background-color: #008cba;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  width: 300px;
+}
+.services-btn-2:hover {
+  cursor: default;
+  background-color: orange;
+}
+
+.services-btn-3 {
+  background-color: #008cba;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  width: 300px;
+}
+.services-btn-3:hover {
+  cursor: default;
+  background-color: orange;
+}
+/*about section */
+.logo-about-container {
+  justify-content: center;
+}
+.logo-about img {
+  height: 70px;
+  width: 200px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-left: 600px;
+  border-radius: 80px;
+}
+.about-paragraph {
+  flex: 1;
+  padding: 20px;
+}
+
+.about-paragraph h1 {
+  font-size: 30px;
+  margin-left: 450px;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.about-container {
+  width: 80%;
+
+  margin: 0 auto;
+  display: flex;
+}
+.about-paragraph-text {
+  padding: 10px;
+}
+.about-paragraph-text p {
+  font-size: 20px;
+  align-items: center;
+}
+.about-pic-container {
+  display: flex;
+  align-items: center;
+  border: #008cba solid 8px;
+  margin: 70px;
+}
+
+.about-pic img {
+  width: 400px;
+  height: 300px;
+  border-radius: 30px;
+  margin-left: 40px;
+}
+
+.about-message-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.about-footer {
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+.about-footer-container-2 {
+  display: flex;
+  position: fixed;
+}
+
+.about-footer-box-2 {
+  display: flex;
+  margin-bottom: 0;
+  margin-top: 100px;
+  height: 100px;
+  width: 100%;
+  border-radius: 3px;
+  color: white;
+}
+
+/* contact section */
+
+.logo-contact-container {
+  justify-content: center;
+}
+.logo-contact img {
+  height: 200px;
+  width: 200px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 90px;
+  margin-left: 630px;
+  border-radius: 80px;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type="text"],
+select,
+textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #008cba; /* Gray border */
+  border-radius: 30px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type="submit"] {
+  background-color: orange;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 20px;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type="submit"]:hover {
+  background-color: orange;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #008cba;
+  padding: 20px;
+  width: 600px;
+  height: 670px;
+  align-items: center;
+  color: white;
+  margin-left: 150px;
+  margin-bottom: 150px;
+}
+
+.contact-paragraph {
+  flex: 1;
+}
+
+.contact-paragraph h1 {
+  font-size: 30px;
+  margin-left: 600px;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.contact-us-container {
+  border-radius: 5px;
+  padding: 20px;
+  width: 600px;
+  height: 650px;
+  align-items: center;
+  margin-bottom: 50px;
+  border-color: #008cba solid 5px;
+}
+
+.form-container {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+.call {
+  display: flex;
+  flex-direction: row;
+}
+
+.call img {
+  height: 100px;
+  width: 100px;
+  margin-top: 0px;
+}
+.call-text {
+  margin-top: 50px;
+  margin-left: 10px;
+}
+.email {
+  display: flex;
+}
+.email-text {
+  margin-top: 60px;
+  margin-left: 10px;
+}
+.email img {
+  height: 100px;
+  width: 100px;
+  margin-top: 20px;
+}
+
+.location {
+  display: flex;
+  flex-direction: row;
+}
+.location img {
+  height: 70px;
+  width: 70px;
+  margin-left: 20px;
+  margin-top: 70px;
+}
+
+.location-text {
+  margin-top: 100px;
+  margin-left: 20px;
+}
+
+.whatsapp {
+  display: flex;
+  flex-direction: row;
+}
+.whatsapp img {
+  height: 70px;
+  width: 70px;
+  margin-left: 20px;
+  margin-top: 50px;
+}
+.whatsapp-text {
+  margin-top: 80px;
+  margin-left: 25px;
+}
+.whole-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.map-container {
+  display: flex;
+}
+.map iframe {
+  height: 400px;
+  width: 1150px;
+  margin-left: 150px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  margin-top: -100px;
+  margin-right: 150px;
+}
+/* 
+/*sign in section */
+.signin-form-container {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+.sign-in-container {
+  border-radius: 5px;
+  background-color: #008cba;
+  padding: 20px;
+  width: 500px;
+  height: 400px;
+  align-items: center;
+  color: white;
+  margin-left: 100px;
+  justify-content: center;
+  margin: 100px;
+  margin-top: 150px;
+}
+
+input {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #008cba; /* Gray border */
+  border-radius: 30px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+.signin-footer-container-2 {
+  display: flex;
+}
+
+.signin-footer-box-2 {
+  display: flex;
+  margin-bottom: 0;
+  margin-top: 100px;
+  height: 100px;
+  width: 100%;
+  background-color: #008cba;
+  align-items: flex-end;
+  border-radius: 3px;
+  color: white;
+}
+.sign-in-container h2 {
+  font-size: 25px;
+  margin-top: -1px;
+  margin-bottom: 10px;
+}
+
+/* sign-up */
+.signup-form-container {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+.sign-up-container {
+  border-radius: 5px;
+  background-color: #008cba;
+  padding: 20px;
+  width: 500px;
+  height: 650px;
+  align-items: center;
+  color: white;
+  margin: 50px;
+  justify-content: center;
+  margin-top: 130px;
+}
+.sign-up-container h2 {
+  font-size: 25px;
+  margin-top: -1px;
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  font-size: 15px;
+}
+
+input[type="email"] {
+  font-size: 15px;
+}
+
+input[type="password"] {
+  font-size: 15px;
+}
+
+.signup-footer-container-2 {
+  display: flex;
+}
+
+.signup-footer-box-2 {
+  display: flex;
+  margin-bottom: 0;
+  margin-top: 100px;
+  height: 100px;
+  width: 100%;
+  background-color: #008cba;
+  align-items: flex-end;
+  border-radius: 3px;
+  color: white;
+}

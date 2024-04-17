@@ -1,0 +1,32 @@
+{% load static %} {% block content %}
+<link rel="stylesheet" href="{% static 'styles/style.css' %}" />
+
+<div class="signin-form-container">
+  <div class="sign-in-container">
+    <form action="">
+      <h2>Log In</h2>
+      <label for="email" class="required"> Email </label>
+      <input
+        type="email"
+        id="email"
+        required
+        name="email"
+        placeholder="Enter your Email Address"
+      />
+      <label for="password" class="required"> Password </label>
+      <input
+        type="password"
+        id="password"
+        required
+        name="password"
+        placeholder="Enter your Password"
+      />
+      <input type="submit" value="Submit" />
+      <center>
+        <p>Don't have an account? <a href="{% url 'signup' %}">Sign Up</a></p>
+      </center>
+    </form>
+  </div>
+</div>
+
+{% endblock %}
